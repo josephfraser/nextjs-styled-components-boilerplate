@@ -1,4 +1,4 @@
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import React from 'react';
 import Page from '../components/Page';
 
@@ -7,11 +7,9 @@ class SA extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
-        <Page>
-          <Component {...pageProps} />
-        </Page>
-      </Container>
+      <Page>
+        <Component {...pageProps} />
+      </Page>
     );
   }
 }
