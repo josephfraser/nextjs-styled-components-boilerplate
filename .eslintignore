@@ -1,0 +1,4 @@
+.cache
+build
+.next
+**/node_modules/**
